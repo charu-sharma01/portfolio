@@ -211,8 +211,9 @@ function initDownloadResume() {
             
             // Create a temporary link for download
             const link = document.createElement('a');
-            link.href = 'assets/resume.pdf'; // Update with actual resume path
-            link.download = 'Charu_Sharma_Resume.pdf';
+            link.href = '/assets/Charu_Sharma_Developer_Resume.pdf';
+            link.download = 'Charu_Sharma_Developer_Resume.pdf';
+            link.target = '_blank';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
